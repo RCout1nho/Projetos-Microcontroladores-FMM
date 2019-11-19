@@ -1,2 +1,2 @@
 # Projetos-Microcontroladores-FMM
- This repostory contains several projects related to microcontrollers such as Arduino and Esp32. As well as software developed in C # for integration with them.
+ Esse repostiório contém diversos projetos relacionados com microcontroladores, tais como Arduino e Esp32. Assim como Softwares desenvolvidos em C# para intregração com os mesmos.
