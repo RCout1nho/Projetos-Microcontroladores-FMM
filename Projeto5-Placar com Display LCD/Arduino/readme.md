@@ -147,7 +147,8 @@ partida foi iniciada, tendo assim o tempo passado em uma partida.
 3. Para converter esse tempo em milissegundos para minutos e segundos, é feita o seguinte cálculo:
 -> Para obter o tempo em segundos basta dividi-lo por 1000, uma vez que milissegundo = (1/1000)segundos.
 -> Para obter o tempo em minutos basta dividir o tempo em segundos por 60, ou o tempo em milissegundos por 60000, utilizando apenas a 
-parte inteira da divisão e depois subtraindo 60*(quantidade de minutos) para obter os segundos restantes. Por exemplo:
+parte inteira da divisão e depois subtraindo 60*(quantidade de minutos) para obter os segundos restantes. 
+### Por exemplo:
 150*10-3 segundos (150 milissegundos)
 1) (150*10-3)/(103) 150 segundos.
 2) 150/60 2 minutos (Divisão inteira).
