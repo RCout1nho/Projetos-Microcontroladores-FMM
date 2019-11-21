@@ -154,3 +154,63 @@ parte inteira da divisão e depois subtraindo 60*(quantidade de minutos) para ob
 2) 150/60 2 minutos (Divisão inteira).
 3) 150 – 2*60  30 segundos.
 RESULTADO = 2 minutos e 30 segundos.
+
+```
+//---Opção do Dominó + Alarme---
+        case 1:
+          t1=0;t2=0;
+          
+          lcd.clear();
+          lcd.setCursor(0,0);
+          lcd.print("T1:" + String(t1));
+          lcd.setCursor(0,1);
+          lcd.print("T2:" + String(t2));
+          
+          delay(50);
+
+          //---Placar Dominó---
+          while(!btn_click(btn_ok))
+          {
+            //---Pontos time 1---
+            if(btn_click(btn_t1))
+            {
+              t1 += 5; 
+              lcd.setCursor(0,0);
+              lcd.print("T1:" + String(t1));
+            }
+
+            //---Pontos time2---
+            if(btn_click(btn_t2))
+            {
+              t2 += 5;
+              lcd.setCursor(0,1);
+              lcd.print("T2:" + String(t2));
+            }
+
+            //---Alarme---
+            if(t1==200 || t2==200)
+            {
+              alarme();
+              break;
+            }
+          }
+          break;
+      }
+    }
+```
+1. Exatamente a mesma rotina que ocorre no jogo de futsal.
+2. Possui um alarme que é tocado quando uma das equipes atinge 200 pontos.
+3. O botão OK serve para retornar ao menu anterior.
+
+```
+    //---Proxima opção---
+    if(btn_click(btn_next))
+    {
+      lcd.clear();
+      lcd.setCursor(0,0);
+      if(op<1)op++;
+      else op=0;
+      lcd.print(menu[op]);
+    }
+```
+Ao ser apertado faz o display alternar entre as opções.
