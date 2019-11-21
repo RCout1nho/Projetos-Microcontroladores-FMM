@@ -34,6 +34,7 @@ mostra o cronômetro foi selecionada e em quanto tempo está o processo atual, d
 
 4.```int tm``` e ```int ts``` servem para armazenar o tempo em minutos e segundos, respectivamente.As variáveis que armazenam o tempo 
 precisam ser do tipo long int pois após certo tempo, os valores em milissegundos ficaram muito grandes.
+###
 
 ```
 //**************************************
@@ -51,6 +52,7 @@ void setup()
 ```
 1. Os botões foram declarados como INPUT_PULLUP para que facilite o uso de hardware, descartando o uso de resistor em séries com o 
 botão.
+###
 
 ```
 //**************************************
@@ -67,6 +69,7 @@ bool btn_click(int btn)
 1. Função foi criada com o intuito de facilitar a leitura do estado dos botões.
 2. O delay(50) é necessário pois, caso não exista, o Arduino faz a leitura de múltiplos toques no botão, visto que cada leitura ocorrerá 
 em tempo de processamento, que é muito rápido, o que torna o delay uma forma de idenficiar toques em tempos diferentes no botão.
+###
 
 ```
 //---Alarme---
@@ -85,6 +88,7 @@ void alarme()
 }
 ```
 1. A função consiste em uma rotina que faz com que o buzzer faça o som de uma sirene de polícia.
+###
 
 ```
 void loop()
@@ -108,6 +112,7 @@ void loop()
 ```
 Caso a opção “Futsal” seja escolhida:
 1.  O display é limpado, reposicionado na posição (0,0), e exibe-se “T1: “ indicando a pontuação do time 1 e “T2: “ indicando a pontuação do time 2.
+###
 
 ```
           while(!btn_click(btn_ok))// Enquando o botão OK não é apertado
@@ -154,6 +159,7 @@ parte inteira da divisão e depois subtraindo 60*(quantidade de minutos) para ob
 2) 150/60 2 minutos (Divisão inteira).
 3) 150 – 2*60  30 segundos.
 RESULTADO = 2 minutos e 30 segundos.
+###
 
 ```
 //---Opção do Dominó + Alarme---
@@ -201,6 +207,7 @@ RESULTADO = 2 minutos e 30 segundos.
 1. Exatamente a mesma rotina que ocorre no jogo de futsal.
 2. Possui um alarme que é tocado quando uma das equipes atinge 200 pontos.
 3. O botão OK serve para retornar ao menu anterior.
+###
 
 ```
     //---Proxima opção---
